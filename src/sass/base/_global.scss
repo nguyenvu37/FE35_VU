@@ -1,0 +1,41 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    font-size: 16px;
+}
+
+.box {
+    display: flex;
+    width: 1180px;
+    margin: 0 auto;
+
+    h3 {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+ul {
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}
