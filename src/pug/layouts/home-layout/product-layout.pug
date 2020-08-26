@@ -1,0 +1,24 @@
+.product
+    .box
+        .product__title
+            .product__title__name
+                .product__title__name--new
+                    | Sản phẩm mới
+                .product__title__name--hot
+                    | Sản phẩm bán chạy
+                .product__title__name--special
+                    | Sản phẩm đặc biệt
+            .product__title__underline
+                img(src="../../../../assets/img/home/3.png")   
+            .product__title__menu
+                ul
+                    each item in listMenuProduct
+                        li
+                            a(href="#")= item
+    .product__items
+        +product-item('../../../../assets/img/home/product1.jpg', 'TYFFANY', '335.000','', 'disable', 'red')
+        +product-item('../../../../assets/img/home/product5.jpg', 'OHUI', '335.000','', 'disable')
+        +product-item('../../../../assets/img/home/product4.jpg', 'HOME', '335.000','450.000', '')
+        +product-item('../../../../assets/img/home/product6.jpg', 'DEBOMA', '335.000','', 'disable')
+        +product-item('../../../../assets/img/home/product3.jpg', 'SARVON', '335.000','', 'disable')
+        +product-item('../../../../assets/img/home/product2.jpg', 'TYFFANY', '335.000','', 'disable', 'red')

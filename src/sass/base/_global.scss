@@ -1,4 +1,5 @@
 @import './variables';
+@import url(//db.onlinewebfonts.com/c/11f83a01c429e081482bf04fec422565?family=UTM+ViceroyJF);
 
 * {
     margin: 0;
@@ -11,6 +12,27 @@ body {
     font-size: 16px;
 }
 
+@font-face {
+    font-family: UTMAvoBold;
+    src: url(../../../assets/font/utm-avobold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: UTMasgraceland;
+    src:url(../../../assets/font/UTMASGraceland.ttf);
+}
+
+@font-face {
+    font-family: Timenewroman;
+    src:url(../../../assets/font/TimesNewRoman400.ttf);
+}
+
+@font-face {
+    font-family: UTMAndrogyne;
+    src:url(../../../assets/font/UTMAndrogyne.ttf);
+}
+
 .box {
     display: flex;
     width: 1180px;
@@ -18,7 +40,7 @@ body {
 
     h3 {
         font-size: 18px;
-        color: #fff;
+        color: #ffffffc7;
         font-weight: 500;
     }
 

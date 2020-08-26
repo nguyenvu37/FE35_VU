@@ -4,12 +4,25 @@
     font-weight: $fw;
 }
 
-@mixin button($bg, $s, $pd) {
+@mixin button($bg, $s, $pd, $cl:#fff) {
     background: $bg;
-    color: #fff;
+    color: $cl;
     font-size: $s;
     padding: $pd;
     outline: none;
     cursor: pointer;
     border: none;
+}
+
+@mixin position-absolute($text, $top, $left) {
+    position: absolute;
+    text-transform: $text;
+    top: $top;
+    left: $left;
+}
+
+@mixin content-goods($color) {
+    background: $color;
+    width: 100%;
+    height: 100%;
 }

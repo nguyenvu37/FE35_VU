@@ -1,3 +1,5 @@
+@import '../base/placeholders';
+
 .logo {
     display: flex;
     position: relative;
@@ -30,6 +32,20 @@
     }
 }
 
+.price.old {
+    font-family:  'Lobster', cursive;
+    position: relative;
+    color: #e3e3e3;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+
+    small {
+        position: absolute;
+        top: 0;
+    }
+}
+
 .arrow-up {
     width: 0;
     height: 0;
@@ -40,4 +56,92 @@
     top: 75px;
     margin-left: 30px;
     display: none;
+}
+
+.arrow-left {
+    @extend %arrow;
+    left: -20px;
+}
+
+.arrow-right {
+    @extend %arrow;
+    right: -20px;
+}
+
+.buy {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.content {
+    position: relative;
+
+    .title-right {
+        left: 25%;
+        color: #fff;
+    }
+
+    .title-left {
+        left: 25%;
+    }
+
+    .title-right,
+    .title-left {
+        position: absolute;
+        top: 40%;
+        text-align: center;
+    
+        p {
+            font-size: 30px;
+            z-index: 1000;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.item {
+    display: flex;
+    color: #e8e8e8;
+    cursor: pointer;
+
+    &:hover {
+        color: #000;
+    }
+
+    &:hover .icon {
+        border: 2px solid #000;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        border: 2px solid #e8e8e8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    
+        i {
+            margin: 0 auto;
+        }
+    }
+
+    p {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .bar {
+        width: 1px;
+        height: 30px;
+        transform: rotate(45deg);
+        background: #e8e8e8;
+        margin: 0 40px;
+    }
+
+    .bar.disable {
+        display: none;
+    }
 }

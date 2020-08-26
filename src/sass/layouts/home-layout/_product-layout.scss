@@ -1,0 +1,188 @@
+.product {
+    width: 100%;
+    height: 806px;
+    background-image: url('../../../../assets/img/home/bg-product.jpg');
+
+    &__title {
+        margin: 0 auto;
+        padding: 70px 0;
+        width: 60%;
+
+        &__name {
+            display: flex;
+            font-family: UTMAndrogyne;
+            align-items: center;
+            color: #c2c2c2;
+
+            .product__title__name--new {
+                flex: 1;
+                padding-right: 20px;
+                font-size: 18px;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .product__title__name--hot {
+                flex: 2;
+                padding: 0 20px;
+                border-left: 1px solid #e6e6e6;
+                border-right: 1px solid #e6e6e6;
+                font-size: 33.93px;
+                color: $green;
+            }
+
+            .product__title__name--special {
+                flex: 1;
+                padding-left: 20px;
+                font-size: 18px;
+            }
+        }
+
+        &__underline {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            img {
+                width: 40%;
+            }
+        }
+
+        &__menu {
+            margin-top: 30px;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                margin: 0 auto;
+
+                li {
+                    a {
+                        font-size: 14px;
+                        color: #8b8b8b;
+                    }
+                }
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        margin: 0 40px;
+        justify-content: space-between;
+
+        &__detail {
+            width: 25%;
+            height: 400px;
+            background: #fff;
+            margin: 0 15px;
+            position: relative;
+
+            img {
+                border-bottom: 1px dashed $light;
+                width: 100%;
+                height: 260px;
+            }
+
+            &__content {
+                margin-top: 10px;
+                text-align: center;
+
+                h4 {
+                    color: #b4b4b4;
+                    font-size: 13px;
+                }
+
+                p {
+                    @include font-a(inherit, 16px, 600);
+                    position: relative;
+                    height: 30px;
+
+                    &:after {
+                        content: '';
+                        width: 30px;
+                        height: 1px;
+                        background: #000;
+                        position: absolute;
+                        bottom: 0;
+                        left: 45%;
+                        text-align: center;
+                    }
+                }
+
+                span {
+                    font-size: 18px;
+                    position: relative;
+                    bottom: -10px;
+                }
+
+                span.disable {
+                    display: none;
+                }
+
+                span.red {
+                    color: red;
+                }
+            }
+
+            &:hover &__icon {
+                opacity: 1;
+            }
+
+            &__icon {
+                margin-top: 10px;
+                width: 100%;
+                background: #fff;
+                padding: 20px 5px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                opacity: 0;
+
+                button {
+                    @extend %button-hover;
+
+                    &:hover {
+                        background: $green;
+                        color: #fff;
+                    }
+                }
+
+                a {
+                    @extend %button-hover;
+
+                    i {
+                        margin: 0 2px;
+                    }
+
+                    &:hover {
+                        background: $green;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        background: $green;
+                        color: #fff;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+
+        .product__items__detail--arrow-right {
+            position: absolute;
+            top: 40%;
+            right: -25px;
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .product__items__detail--arrow-left {
+            position: absolute;
+            top: 40%;
+            left: -25px;
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+}
