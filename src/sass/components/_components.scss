@@ -20,7 +20,7 @@
 }
 
 .price {
-    font-family:  'Lobster', cursive;
+    font-family:  $Lobster;
     position: relative;
     color: $green;
     font-size: 14px;
@@ -33,7 +33,7 @@
 }
 
 .price.old {
-    font-family:  'Lobster', cursive;
+    font-family:  $Lobster;
     position: relative;
     color: #e3e3e3;
     font-size: 14px;
@@ -53,7 +53,7 @@
     border-right: 15px solid transparent;
     border-bottom: 10px solid $green;
     position: fixed;
-    top: 75px;
+    top: 65px;
     margin-left: 30px;
     display: none;
 }
@@ -143,5 +143,111 @@
 
     .bar.disable {
         display: none;
+    }
+}
+
+.disable {
+    display: none;
+}
+
+.path {
+    position: relative;
+    height: 125px;
+
+    &__content {
+        width: 100%;
+        margin-top: 75px;
+        border-bottom: 1px solid #dedddd80;
+        position: absolute;
+        // z-index: 1100;
+
+        ul {
+            display: flex;
+            padding: 10px 0;
+
+            li {
+                &.path__content--green a,i {
+                    color: $green;
+                }
+
+                a {
+                    font-size: 12px;
+                    color: #000;
+                }
+
+                i {
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.item-buying {
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    button {
+        @extend %button-hover;
+
+        &:hover {
+            background: $green;
+            color: #fff;
+        }
+    }
+
+    a {
+        @extend %button-hover;
+
+        i {
+            margin: 0 2px;
+        }
+
+        &:hover {
+            background: $green;
+            color: #fff;
+        }
+
+        &:hover {
+            background: $green;
+            color: #fff;
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.detail-price {
+    span {
+        font-family: $Lobster;
+        @include font-a(#000, 29px, inherit);
+        margin-right: 5px;
+    }
+
+    small {
+        font-family: $Lobster;
+        @include font-a($smokyGray, 20px, inherit);
+        margin-left: 5px;
+    }
+}
+
+.item-input {
+    width: 80%;
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: 10px 20px;
+        outline: none;
+    }
+
+    i {
+        position: absolute;
+        top: 25%;
+        right: 5px;
+        color: $smokyGray;
+        cursor: pointer;
     }
 }

@@ -34,7 +34,7 @@ mixin product-item(img, h4, price, old, disable, red, right, left)
                 small đ
             span.price.old(class=disable)= old
                 small đ
-        .product__items__detail__icon
+        .product__items__detail__icon.item-buying
             button MUA HÀNG
             a(href="#")
                 i.fas.fa-heart
@@ -47,3 +47,44 @@ mixin social-item(className, classIcon, icon, name, disable)
             i(class=icon)
         p= name
         .bar(class=disable)
+
+mixin list-path(list)
+    ul 
+        each item in list
+            li(class=item.className)
+                a(href="#")= item.content
+                i.fas.fa-angle-right(class=item.classIcon)
+
+mixin btn-social(classBtn, classIcon, content, disable)
+    .detail__info__social__content__item
+        a(href="#" class=classBtn)
+            i(class=classIcon)
+            | #{content}
+        .quantity(class=disable)
+            span 0
+
+mixin info-content(img, classText, classImg)
+    .info-product__content__item
+        .info-product__content__item__text(class=classText)
+            h5 the mark of a legend
+            .border-bottom
+            p Tự hào được ghi là năm mà Tyffany &amp; Co là
+            p thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+            p qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp 
+            p đường cong và đường nét mượt mà.
+        .info-product__content__item__img(class=classImg)
+            img(src=img)
+mixin top-selling(className)
+    .info-product__selling__item(class=className)
+        img(src='../../../assets/img/detail/img3.jpg')
+        .info-product__selling__item__content
+            p Mỹ phẩm châu Âu
+            .info-product__selling__item__content--appreciate
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                p ( 4 lượt mua )
+            .detail-price 
+                span 335.000đ

@@ -4,6 +4,10 @@
 @import './base/variables';
 @import './components/components';
 
+// Home Page
 @import './layouts/header';
 @import './pages/index';
 @import './layouts/footer';
+
+// Detail Page
+@import './pages/detail';
