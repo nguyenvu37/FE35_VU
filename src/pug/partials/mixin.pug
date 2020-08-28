@@ -144,3 +144,19 @@ mixin list-product(className, img)
                     i.fas.fa-heart
                 a(href="#")
                     i.fas.fa-sync-alt
+
+mixin table(img, num, total)
+    tr
+        td
+            img(src=img)
+        td Lắc tay D&amp;G
+        td
+            span.price 345.000
+                small đ
+        td.num
+            span= num
+        td
+            span.price= total
+                small đ
+        td
+            i.fas.fa-trash-alt 

@@ -19,6 +19,7 @@
     <!-- Detail-->
     <!-- Grid-->
     <!-- List Page-->
+    <!-- Shopping Cart-->
     <header>
       <div class="box">
         <div class="nav">
@@ -102,145 +103,53 @@
           <div class="path__content">
                 <ul> 
                   <li><a href="#">Home</a><i class="fas fa-angle-right"></i></li>
+                  <li><a href="#">Sản phẩm</a><i class="fas fa-angle-right"></i></li>
                   <li class="path__content--green"><a href="#">Trang sức</a><i class="fas fa-angle-right disable"></i></li>
                 </ul>
           </div>
         </div>
       </section>
-      <!-- Advertisement background-->
-      <section class="advertisement">
+      <!-- Content Cart-->
+      <section class="cart">
         <div class="box">
-          <div class="advertisement__content">
-            <h1>Giảm giá 50%</h1>
-            <div class="advertisement__content__time">
-              <h4>trong vòng 3 ngày</h4>
-              <p>( 25/5 - 28/5/2015 ) </p>
+          <div class="cart__content">
+            <div class="cart__content__title">
+              <h1>Giỏ hàng</h1>
+            </div>
+            <div class="cart__content__table">
+              <table>
+                <tr>
+                  <th>Ảnh</th>
+                  <th>Tên sản phẩm</th>
+                  <th>giá</th>
+                  <th>số lượng</th>
+                  <th>tổng số</th>
+                  <th>xóa</th>
+                </tr>
+                    <tr>
+                      <td><img src="../../../assets/img/cart/product.jpg"></td>
+                      <td>Lắc tay D&amp;G</td>
+                      <td><span class="price">345.000<small>đ</small></span></td>
+                      <td class="num"><span>1</span></td>
+                      <td><span class="price">345.000<small>đ</small></span></td>
+                      <td><i class="fas fa-trash-alt"> </i></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../../../assets/img/cart/product.jpg"></td>
+                      <td>Lắc tay D&amp;G</td>
+                      <td><span class="price">345.000<small>đ</small></span></td>
+                      <td class="num"><span>2</span></td>
+                      <td><span class="price">690.000<small>đ</small></span></td>
+                      <td><i class="fas fa-trash-alt"> </i></td>
+                    </tr>
+              </table>
+            </div>
+            <div class="cart__content__btn">
+              <button type="button">Tiếp tục mua hàng</button>
+              <button class="delete" type="button">Xóa</button>
+              <button class="update" type="button">Cập nhật </button>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Content List Page-->
-      <section class="list">
-        <div class="box">
-          <aside>
-            <div class="categories">
-              <div class="categories__content">
-                <div class="categories__content__title border-solid"><i class="fas fa-bars"></i>
-                  <h1>Danh mục sản phẩm</h1>
-                </div>
-                <div class="categories__content__cosmetics border-dotted">
-                  <h2>mỹ phẩm<i class="fas fa-caret-right"></i></h2>
-                </div>
-                <div class="categories__content__jewelry border-dotted">
-                  <h2>trang sức<i class="fas fa-caret-down"></i></h2>
-                  <ul>
-                    <li>Vòng tay</li>
-                    <li>Nhẫn</li>
-                    <li>Lắc chân</li>
-                    <li>Phụ kiện khác</li>
-                    <li>Giày Lười Giày Mọi</li>
-                  </ul>
-                </div>
-                <div class="categories__content__accessories border-dotted">
-                  <h2>phụ kiện<i class="fas fa-caret-right"></i></h2>
-                </div>
-                <div class="categories__content__perfume border-dotted">
-                  <h2>nước hoa<i class="fas fa-caret-right"></i></h2>
-                </div>
-              </div>
-              <div class="categories__compare">
-                <h1 class="border-solid">so sánh sản phẩm</h1>
-                <p>  Bạn chưa có sản phẩm nào đẻ so sánh</p>
-              </div>
-              <div class="categories__tag">
-                <h1 class="border-solid">tag sản phẩm</h1>
-                <div class="categories__tag__btn">
-                  <button type="button">Hoa tai</button>
-                  <button type="button">Son</button>
-                  <button type="button">Nước hoa</button>
-                  <button type="button">Giày</button>
-                  <button type="button">Sandal</button>
-                  <button type="button">Áo sơn mi</button>
-                  <button type="button">Nước hoa</button>
-                  <button type="button">Trẻ em</button>
-                  <button type="button">Thời trang nữ</button>
-                </div>
-              </div>
-              <div class="categories__img"><img src="../../../../assets/img/grid/mandala-store.jpg"></div>
-            </div>
-          </aside>
-          <article>
-            <div class="list__content">
-              <div class="list__content__pagination">
-                    <div class="pagination">
-                      <div class="pagination__list"><i class="fas fa-th-large"></i><i class="fas fa-list"></i></div>
-                      <div class="pagination__num"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
-                    </div>
-              </div>
-              <div class="list__content__product">
-                    <div class="list__content__product__item list-product1"><img src="../../../assets/img/home/product6.jpg">
-                      <div class="list__content__product__item__info">
-                        <h4>Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới</h4>
-                        <div class="list__content__product__item__info--appreciate"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i>
-                          <p>( 4 Lượt mua )</p>
-                        </div>
-                        <div class="list__content__product__item__text">
-                          <p>Tự hào được ghi là năm mà Tyffany &amp; Co là</p>
-                          <p>thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với</p>
-                          <p>qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp </p>
-                          <p>đường cong và đường nét mượt mà.</p>
-                        </div>
-                        <div class="detail-price"> <span>335.000đ</span></div>
-                        <div class="list__content__product__item__icon item-buying">
-                          <button>MUA HÀNG</button><a href="#"><i class="fas fa-heart"></i></a><a href="#"><i class="fas fa-sync-alt"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="list__content__product__item list-product2"><img src="../../../assets/img/home/product6.jpg">
-                      <div class="list__content__product__item__info">
-                        <h4>Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới</h4>
-                        <div class="list__content__product__item__info--appreciate"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i>
-                          <p>( 4 Lượt mua )</p>
-                        </div>
-                        <div class="list__content__product__item__text">
-                          <p>Tự hào được ghi là năm mà Tyffany &amp; Co là</p>
-                          <p>thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với</p>
-                          <p>qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp </p>
-                          <p>đường cong và đường nét mượt mà.</p>
-                        </div>
-                        <div class="detail-price"> <span>335.000đ</span></div>
-                        <div class="list__content__product__item__icon item-buying">
-                          <button>MUA HÀNG</button><a href="#"><i class="fas fa-heart"></i></a><a href="#"><i class="fas fa-sync-alt"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="list__content__product__item list-product3"><img src="../../../assets/img/home/product6.jpg">
-                      <div class="list__content__product__item__info">
-                        <h4>Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới</h4>
-                        <div class="list__content__product__item__info--appreciate"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i>
-                          <p>( 4 Lượt mua )</p>
-                        </div>
-                        <div class="list__content__product__item__text">
-                          <p>Tự hào được ghi là năm mà Tyffany &amp; Co là</p>
-                          <p>thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với</p>
-                          <p>qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp </p>
-                          <p>đường cong và đường nét mượt mà.</p>
-                        </div>
-                        <div class="detail-price"> <span>335.000đ</span></div>
-                        <div class="list__content__product__item__icon item-buying">
-                          <button>MUA HÀNG</button><a href="#"><i class="fas fa-heart"></i></a><a href="#"><i class="fas fa-sync-alt"></i></a>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-              <div class="list__content__pagination">
-                    <div class="pagination">
-                      <div class="pagination__list"><i class="fas fa-th-large"></i><i class="fas fa-list"></i></div>
-                      <div class="pagination__num"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
-                    </div>
-              </div>
-            </div>
-          </article>
         </div>
       </section>
     </main>
@@ -306,6 +215,5 @@
         </div>
       </div>
     </footer>
-    <!-- Shopping Cart-->
   </body>
 </html>
