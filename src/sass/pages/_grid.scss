@@ -1,0 +1,37 @@
+@import '../layouts//grid-layout/content-grid';
+
+main {
+    .advertisement {
+        height: 170px;
+        background-image: url('../../../assets/img/grid/bg-discount.jpg');
+        background-size: cover;
+        background-position: center;
+
+        &__content {
+            width: 100%;
+            height: 169px;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-family: $Lobster;
+                @include font-a(#fff, 74.05px, 500);
+            }
+
+            &__time {
+                margin-left: 20px;
+                display: block;
+                font-family: $roboto;
+
+                h4 {
+                    @include font-a(#fff, 23.97px, 100);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    @include font-a(#fff, 27px, 500);
+                }
+            }
+        }
+    }
+}

@@ -3,7 +3,10 @@ extends ../layouts/detail-layout.pug
 block main-detail
     main
         // Path
-        include ../layouts/path-layout/path
+        section.path
+            .box
+                .path__content
+                    +list-path(listPathDetail)
         // Detail Product
         include ../layouts/detail-layout/detail-product
         // Information Product

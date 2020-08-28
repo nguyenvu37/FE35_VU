@@ -27,7 +27,7 @@ mixin product-item(img, h4, price, old, disable, red, right, left)
         .product__items__detail--arrow-left
             label(for=left).fas.fa-arrow-left
         img(src=img)
-        .product__items__detail__content
+        .product__items__detail__content.detail-content
             h4= h4
             p Mỹ phẩm châu Âu
             span.price(class=red)= price
@@ -74,6 +74,7 @@ mixin info-content(img, classText, classImg)
             p đường cong và đường nét mượt mà.
         .info-product__content__item__img(class=classImg)
             img(src=img)
+
 mixin top-selling(className)
     .info-product__selling__item(class=className)
         img(src='../../../assets/img/detail/img3.jpg')
@@ -88,3 +89,32 @@ mixin top-selling(className)
                 p ( 4 lượt mua )
             .detail-price 
                 span 335.000đ
+
+mixin pagination
+    .pagination
+        .pagination__list
+            i.fas.fa-th-large
+            i.fas.fa-list
+        .pagination__num
+            i.fas.fa-caret-left
+            span.active 1
+            span 2
+            span 3
+            i.fas.fa-caret-right
+
+mixin grid-product(className, img, h4, old, disable)
+    .grid__content__product__item(class=className)
+        img(src=img)
+        .grid__content__product__item__info.detail-content
+            h4= h4
+            p Mỹ phẩm châu Âu
+            span.price 335.000
+                small đ
+            span.price.old(class=disable)= old
+                small đ
+        .grid__content__product__item__icon.item-buying
+            button MUA HÀNG
+            a(href="#")
+                i.fas.fa-heart
+            a(href="#")
+                i.fas.fa-sync-alt

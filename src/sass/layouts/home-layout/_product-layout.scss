@@ -86,47 +86,6 @@
                 height: 260px;
             }
 
-            &__content {
-                margin-top: 10px;
-                text-align: center;
-
-                h4 {
-                    color: #b4b4b4;
-                    font-size: 13px;
-                }
-
-                p {
-                    @include font-a(inherit, 16px, 600);
-                    position: relative;
-                    height: 30px;
-
-                    &:after {
-                        content: '';
-                        width: 30px;
-                        height: 1px;
-                        background: #000;
-                        position: absolute;
-                        bottom: 0;
-                        left: 45%;
-                        text-align: center;
-                    }
-                }
-
-                span {
-                    font-size: 18px;
-                    position: relative;
-                    bottom: -10px;
-                }
-
-                span.disable {
-                    display: none;
-                }
-
-                span.red {
-                    color: red;
-                }
-            }
-
             &:hover &__icon {
                 opacity: 1;
             }
