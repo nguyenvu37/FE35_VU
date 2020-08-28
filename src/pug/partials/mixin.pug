@@ -118,3 +118,29 @@ mixin grid-product(className, img, h4, old, disable)
                 i.fas.fa-heart
             a(href="#")
                 i.fas.fa-sync-alt
+
+mixin list-product(className, img)
+    .list__content__product__item(class=className)
+        img(src=img)
+        .list__content__product__item__info
+            h4 Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới
+            .list__content__product__item__info--appreciate
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                p ( 4 Lượt mua )
+            .list__content__product__item__text
+                p Tự hào được ghi là năm mà Tyffany &amp; Co là
+                p thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                p qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp 
+                p đường cong và đường nét mượt mà.
+            .detail-price 
+                span 335.000đ
+            .list__content__product__item__icon.item-buying
+                button MUA HÀNG
+                a(href="#")
+                    i.fas.fa-heart
+                a(href="#")
+                    i.fas.fa-sync-alt
