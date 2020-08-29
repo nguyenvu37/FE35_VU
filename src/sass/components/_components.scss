@@ -169,6 +169,14 @@
                     color: $green;
                 }
 
+                &.path__content--red a,i {
+                    color: red;
+                }
+
+                &.path__icon--red i {
+                    color: red;
+                }
+
                 a {
                     font-size: 12px;
                     color: #000;
@@ -467,5 +475,39 @@ article {
 
     span.red {
         color: red;
+    }
+}
+
+.total {
+    position: relative;
+    font-size: 14px;
+    margin-left: 15px;
+
+    small {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.color-red {
+    color: red;
+    font-size: 14px;
+}
+
+.title-content {
+    h1, 
+    h3 {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 14px;
     }
 }

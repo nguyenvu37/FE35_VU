@@ -159,4 +159,16 @@ mixin table(img, num, total)
             span.price= total
                 small đ
         td
-            i.fas.fa-trash-alt 
+            i.fas.fa-trash-alt
+
+mixin table-acc(status, indept, disable)
+    tr
+        td #1006
+        td  May 13, 2013
+        td.color-red= status
+        td
+            span.total 350.000
+                small đ
+        td
+            span.total= indept
+                small(class=disable) đ
