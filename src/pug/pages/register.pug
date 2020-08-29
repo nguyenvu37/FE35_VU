@@ -13,22 +13,22 @@ block main-register
                 .register__content
                     .register__content__title.title-content
                         h1 đăng ký
-                    .register__content__form
+                    .register__content__form.form
                         form(action="")
                             .register__content__form__title1
                                 h3 thông tin cá nhân
-                            +form-register('Tên trước *', 'text')
-                            +form-register('Tên sau *', 'text')
-                            +form-register('Email *', 'email')
-                            +form-register('Password *', 'password')
+                            +form-group('Tên trước *', 'text')
+                            +form-group('Tên sau *', 'text')
+                            +form-group('Email *', 'email')
+                            +form-group('Password *', 'password')
                             .register__content__form__notification
                                 p.point
                                 p.text Đăng ký nhận bản tin
                             .register__content__form__title2
                                 h3 thông tin đăng nhập
-                            +form-register('Mật khẩu *', 'password')
-                            +form-register('Xác nhận mật khẩu', 'password')
-                            .register__content__form__btn
+                            +form-group('Mật khẩu *', 'password')
+                            +form-group('Xác nhận mật khẩu', 'password')
+                            .register__content__form__btn.btn-form
                                 a(href="#") Gửi
                                 a(href="#")
                                     i.fas.fa-reply
