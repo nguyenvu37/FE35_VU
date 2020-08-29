@@ -20,6 +20,8 @@
     <!-- Grid-->
     <!-- List Page-->
     <!-- Shopping Cart-->
+    <!-- Account-->
+    <!-- Register Page-->
     <header>
       <div class="box">
         <div class="nav">
@@ -103,51 +105,56 @@
           <div class="path__content">
                 <ul> 
                   <li><a href="#">Home</a><i class="fas fa-angle-right"></i></li>
-                  <li><a href="#">Sản phẩm</a><i class="fas fa-angle-right"></i></li>
-                  <li class="path__content--green"><a href="#">Trang sức</a><i class="fas fa-angle-right disable"></i></li>
+                  <li class="path__content--green"><a href="#">Đăng ký</a><i class="fas fa-angle-right disable"></i></li>
                 </ul>
           </div>
         </div>
       </section>
-      <!-- Content Cart-->
-      <section class="cart">
+      <!-- Content Register-->
+      <section class="register">
         <div class="box">
-          <div class="cart__content">
-            <div class="cart__content__title">
-              <h1>Giỏ hàng</h1>
+          <div class="register__content">
+            <div class="register__content__title title-content">
+              <h1>đăng ký</h1>
             </div>
-            <div class="cart__content__table">
-              <table>
-                <tr>
-                  <th>Ảnh</th>
-                  <th>Tên sản phẩm</th>
-                  <th>giá</th>
-                  <th>số lượng</th>
-                  <th>tổng số</th>
-                  <th>xóa</th>
-                </tr>
-                    <tr>
-                      <td><img src="../../../assets/img/cart/product.jpg"></td>
-                      <td>Lắc tay D&amp;G</td>
-                      <td><span class="price">345.000<small>đ</small></span></td>
-                      <td class="num"><span>1</span></td>
-                      <td><span class="price">345.000<small>đ</small></span></td>
-                      <td><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <tr>
-                      <td><img src="../../../assets/img/cart/product.jpg"></td>
-                      <td>Lắc tay D&amp;G</td>
-                      <td><span class="price">345.000<small>đ</small></span></td>
-                      <td class="num"><span>2</span></td>
-                      <td><span class="price">690.000<small>đ</small></span></td>
-                      <td><i class="fas fa-trash-alt"></i></td>
-                    </tr>
-              </table>
-            </div>
-            <div class="cart__content__btn">
-              <button type="button">Tiếp tục mua hàng</button>
-              <button class="delete" type="button">Xóa</button>
-              <button class="update" type="button">Cập nhật </button>
+            <div class="register__content__form">
+              <form action="">
+                <div class="register__content__form__title1">
+                  <h3>thông tin cá nhân</h3>
+                </div>
+                    <div class="register__content__form__group">
+                      <label>Tên trước *</label>
+                      <input type="text">
+                    </div>
+                    <div class="register__content__form__group">
+                      <label>Tên sau *</label>
+                      <input type="text">
+                    </div>
+                    <div class="register__content__form__group">
+                      <label>Email *</label>
+                      <input type="email">
+                    </div>
+                    <div class="register__content__form__group">
+                      <label>Password *</label>
+                      <input type="password">
+                    </div>
+                <div class="register__content__form__notification">
+                  <p class="point"></p>
+                  <p class="text">Đăng ký nhận bản tin</p>
+                </div>
+                <div class="register__content__form__title2">
+                  <h3>thông tin đăng nhập</h3>
+                </div>
+                    <div class="register__content__form__group">
+                      <label>Mật khẩu *</label>
+                      <input type="password">
+                    </div>
+                    <div class="register__content__form__group">
+                      <label>Xác nhận mật khẩu</label>
+                      <input type="password">
+                    </div>
+                <div class="register__content__form__btn"><a href="#">Gửi</a><a href="#"><i class="fas fa-reply"></i>Quay lại</a></div>
+              </form>
             </div>
           </div>
         </div>
@@ -215,7 +222,5 @@
         </div>
       </div>
     </footer>
-    <!-- Account-->
-    <!-- Register Page-->
   </body>
 </html>

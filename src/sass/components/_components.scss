@@ -169,11 +169,11 @@
                     color: $green;
                 }
 
-                &.path__content--red a,i {
+                &.path__content--red a {
                     color: red;
                 }
 
-                &.path__icon--red i {
+                .path__icon--red {
                     color: red;
                 }
 

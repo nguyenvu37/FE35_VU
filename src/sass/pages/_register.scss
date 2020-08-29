@@ -1,0 +1,70 @@
+.register {
+    width: 100%;
+    margin-bottom: 80px;
+
+    &__content {
+        width: 100%;
+
+        &__form {
+            background: #f2f2f2;
+            border: 1px solid #e8e8e8;
+
+            form {
+                padding: 30px 50px;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                @include font-a(#000, 18px, 500);
+                margin-bottom: 15px;
+            }
+
+            &__group {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    @include font-a(#000, 12px, 600);
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    padding: 5px 10px;
+                    margin-bottom: 5px;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            &__notification {
+                display: flex;
+                align-items: baseline;
+                font-size: 12px;
+                font-weight: 600;
+
+                .point {
+                    width: 5px;
+                    height: 5px;
+                    background: #eaeaea;
+                    margin-right: 5px;
+                }
+            }
+
+            &__title2 {
+                margin-top: 30px;
+            }
+
+            &__btn {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    @include button(#000, 12px, 5px 10px, #fff);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
