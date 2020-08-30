@@ -1,4 +1,5 @@
 @import '../../base/variables';
+@import './layouts/home-layout/newsletter';
 
 .background { 
     position: relative;
@@ -37,8 +38,37 @@
                 }
             }
 
-            a {
-                color: #353535;
+            &__btn {
+                input {
+                    display: none;
+                    
+                    &:checked~.background__img__content__btn__overlay {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: all 1s;
+                    }
+                }
+
+                label {
+                    color: #353535;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                &__overlay {
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 1500;
+                    background-color: #1c1c1c75;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+
             }
 
             .background__img__content--green {
