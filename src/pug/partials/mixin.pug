@@ -63,15 +63,16 @@ mixin btn-social(classBtn, classIcon, content, disable)
         .quantity(class=disable)
             span 0
 
-mixin info-content(img, classText, classImg)
-    .info-product__content__item
+mixin info-content(img, classText, classImg, className)
+    .info-product__content__item(class=className)
         .info-product__content__item__text(class=classText)
             h5 the mark of a legend
             .border-bottom
-            p Tự hào được ghi là năm mà Tyffany &amp; Co là
-            p thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
-            p qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp 
-            p đường cong và đường nét mượt mà.
+            .item-text
+                p Tự hào được ghi là năm mà Tyffany &amp; Co là
+                p thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                p qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp 
+                p đường cong và đường nét mượt mà.
         .info-product__content__item__img(class=classImg)
             img(src=img)
 
