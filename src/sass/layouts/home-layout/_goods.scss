@@ -243,3 +243,326 @@
         }
     }
 }
+
+// Responsive
+@media screen and (max-width: 1300px) {
+    .goods {
+        height: 100%;
+        grid-template-columns: 360px 360px;
+        grid-template-rows: 195px 195px 195px 195px;
+
+        .img-goods {
+            width: 172.5px;
+            height: 185px;
+        }
+
+        &__shower-gel {
+
+            &__content {
+                width: 172.5px;
+                height: 185px;
+                margin: 0 0 10px 10px;
+
+                .goods__shower-gel__content--arrow-left {
+                    border-right: 15px solid #e3ce33;
+                }
+            }
+        }
+
+        &__perfume {
+            &__content {
+                width: 172.5px;
+                height: 185px;
+                margin: 0 5px 10px 0;
+            }
+
+            &__img {
+                margin: 0 0px 5px 5px;
+
+                img {
+                    width: 172.5px;
+                    height: 185px;
+                }
+
+                &__content {
+                    top: 5%;
+                    
+                    p {
+                        font-weight: 700;
+                        width: 50%;
+                    }
+                    
+                    span {
+                        font-size: 50px;
+
+                        small {
+                            font-size: 25px;
+                        }
+                    }
+
+                    a {
+                        font-size: 14px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+
+        &__corinne {
+            &__content {
+                width: 355px;
+                margin-left: auto;
+
+                p {
+                    top: 88%;
+                    left: 30%;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__compo {
+            &__content {
+                img {
+                    width: 355px;
+                    height: 380px;
+                }
+
+                &__title {
+                    p {
+                        top: 0;
+                        margin-bottom: -20px;
+                    }
+
+                    span {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+
+        &__jewelry {
+            &__content {
+                width: 172.5px;
+                height: 185px;
+                margin: 0 10px 10px 5px;
+            }
+        }
+
+        &__daisy {
+            &__img {
+                margin: 0 10px 10px 5px;
+            }
+
+            &__content {
+                width: 172.5px;
+                height: 185px;
+                margin: 0;
+
+                img {
+                    left: 35%;
+                    width: 30%;
+                }
+
+                &__title {
+                    left: 10%;
+                    
+                    p {
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .goods {
+        grid-template-columns: 450px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        .img-goods {
+            width: 220px !important;
+            height: 248px !important;
+        }
+
+        .content {
+            width: 225px;
+            height: 248px;
+        }
+
+        &__shower-gel {
+            margin-top: 5px;
+
+            &__content {
+                width: 225px;
+                height: 248px;
+            }
+        }
+
+        &__perfume {
+            &__img {
+                &__content {
+                    top: 15%;
+
+                    p {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-size: 76.33px;
+                    }
+
+                    a {
+                        margin-left: 60px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        &__corinne {
+            grid-column: 1/2;
+            grid-row: 3/5;
+            margin-top: 10px;
+            
+            &__content {
+                width: 450px !important;
+                height: 500px !important;
+            }
+        }
+
+        &__compo {
+            grid-row: 5/7;
+            margin-top: 10px;
+
+            &__content {
+                img {
+                    width: 450px !important;
+                    height: 500px !important;
+                }
+            }
+        }
+
+        &__jewelry {
+            grid-row: 7/8;
+            grid-column: 1/2;
+            margin-top: 10px;
+
+            &__content {
+                margin: 0 10px 10px 0px;
+            }
+        }
+
+        &__daisy {
+            grid-row: 8/9;
+            grid-column: 1/2;
+
+            &__img {
+                margin: 0 10px 10px 0px;
+            }
+        }
+
+        .title-right,
+        .title-left {
+            width: 90%;
+            left: 5%;
+            top: 35%;
+
+            p {
+                font-size: 30px;
+            }
+        }
+
+        .title-left {
+            right: 5%;
+        }
+
+        .goods__corinne__content p {
+            top: 75%;
+            font-size: 18px;
+        }
+
+        .goods__compo__content__title p {
+            font-size: 16px;
+        }
+
+        .goods__compo__content__title span {
+            font-size: 54.26px;
+        }
+
+        .goods__daisy__content__title p {
+            font-size: 30px; 
+        }
+
+        .goods__daisy__content__title span {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .goods {
+        grid-template-columns: 320px !important;
+
+        .img-goods {
+            width: 155px !important;
+            height: 170px !important;
+        }
+
+        .content {
+            width: 155px !important;
+            height: 170px !important;
+        }
+
+        .title-right p, 
+        .title-left p {
+            font-size: 18px !important;
+        }
+
+        .goods__perfume__img__content {
+            top: 5%;
+
+            span {
+                font-size: 50px;
+            }
+
+            a {
+                font-size: 12px;
+                margin-left: 40px;
+            }
+        }
+
+        .goods__corinne__content {
+            width: 320px !important;
+            height: 370px !important;
+        }
+
+        &__compo {
+            margin-top: 20px;
+
+            .goods__compo__content img {
+                width: 320px !important;
+                height: 370px !important;
+            }
+
+            .goods__compo__content__title {
+                width: 300px;
+            }
+        }
+
+        .goods__daisy__content__title p {
+            font-size: 20px;
+        }
+
+        .goods__daisy__content__title span {
+            font-size: 14px;
+        }
+    }
+}

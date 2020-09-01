@@ -25,7 +25,6 @@ header
                                                     li.list-item
                                                         a(href="#") #{list}
             .nav__cart
-                i.fas.fa-search.search
                 i.fas.fa-shopping-cart.cart
                     .arrow-up
                     .nav__cart__info
@@ -38,3 +37,30 @@ header
                             col
                         .nav__cart__info__btn
                             button(type="button") GIỎ HÀNG
+                i.fas.fa-search.search
+                .nav__cart__bar
+                    input.nav__cart__bar--checkbox(type="checkbox" id="menu-toggle")
+                    label(for="menu-toggle")
+                        i.fas.fa-bars.bar
+                    .nav__cart__bar__menu
+                        .bar-logo.logo
+                            .bar-logo--square.logo-square
+                                a(href="index.html")
+                                    img.logo-img(src="../../../assets/img/home/mandala.png")
+                        .bar-menu
+                            ul
+                                each menu in listMenu
+                                    li(class=menu.className)
+                                        a(href=menu.link)
+                                            | #{menu.content}
+                                            if menu.dropdown
+                                                .dropdown-list
+                                                    each item in menu.dropdown
+                                                        ul
+                                                            .list-name= item.ul
+                                                            each list in item.li
+                                                                li.list-item
+                                                                    a(href="#") #{list}
+                        .bar-cart
+                            i.fas.fa-shopping-cart.cart
+                            i.fas.fa-search.search

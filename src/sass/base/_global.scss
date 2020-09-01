@@ -62,3 +62,22 @@ ul {
         }
     }
 }
+
+// Responsive
+@media screen and (max-width: 1300px) {
+    .box {
+        width: 720px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        width: 450px !important;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .box {
+        width: 320px !important;
+    }
+}

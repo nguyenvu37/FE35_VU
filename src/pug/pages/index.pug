@@ -5,11 +5,12 @@ block  main
         // Background image
         include ../layouts/home-layout/background-img
         // Policy
-        .policy
+        section
             .box
-                +policy('policy__transport','../../../assets/img/home/plane.png', 'Miễn phí vận chuyển')
-                +policy('policy__gift','../../../assets/img/home/gift.png', 'Nhận ngay quà tặng trí giá 350.000đ')
-                +policy('policy__discount', '../../../assets/img/home/star.png', 'Giảm 30% cho đơn hàng trên 5.000.000đ')
+                .policy
+                    +policy('policy__transport','../../../assets/img/home/plane.png', 'Miễn phí vận chuyển')
+                    +policy('policy__gift','../../../assets/img/home/gift.png', 'Nhận ngay quà tặng trí giá 350.000đ')
+                    +policy('policy__discount', '../../../assets/img/home/star.png', 'Giảm 30% cho đơn hàng trên 5.000.000đ')
         // Goods of Mandala
         include ../layouts/home-layout/goods
         // Testimonials
@@ -40,7 +41,7 @@ block  main
         .info
             .info__about
                 h4 VỀ CHÚNG TÔI
-                img(src="../../../assets/img/home/3.png")
+                img.img-about(src="../../../assets/img/home/3.png")
                 .info__about__content
                     .info__about__content__logo.logo
                         .info__about__content__logo__square.logo-square
@@ -63,12 +64,13 @@ block  main
                             i.fas.fa-angle-right
                         a(href="#") 23 Bình Luận
             .info__contact
-                h4 GỬI EMAIL CHO CHÚNG TÔI
-                img(src="../../../assets/img/home/3.png")
-                .info__contact__content
+                .info__contact__email
+                    h4 GỬI EMAIL CHO CHÚNG TÔI
+                    img(src="../../../assets/img/home/3.png")
                     input(type="text" placeholder="Email của bạn")
                     p Gửi email để nhận những ưu đãi mới nhất
                     button(type="button") Gửi
+                .info__contact__content
                     h4 TAG SẢN PHẨM
                     img(src="../../../assets/img/home/3.png")
                     .info__contact__content__btn
