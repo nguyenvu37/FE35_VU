@@ -591,4 +591,39 @@ article {
     .arrow-right {
         right: -15px;
     }
+
+    .advertisement {
+        &__content {
+            h1 {
+                font-size: 52.6px;
+            }
+
+            &__time {
+                h4,
+                p {
+                    font-size: 17.03px;
+                }
+            }
+        }
+    }
+
+    .categories {
+        .btn-tag8,
+        .btn-tag9 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .advertisement {
+       display: none;
+    }
+
+    .categories {
+        .btn-tag6,
+        .btn-tag7 {
+            display: none;
+        }
+    }
 }

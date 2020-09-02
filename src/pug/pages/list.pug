@@ -16,17 +16,18 @@ block main-list
                         h4 trong vòng 3 ngày
                         p ( 25/5 - 28/5/2015 ) 
         // Content List Page
-        section.list
+        section
             .box
-                aside
-                    include ../layouts/categories-layout/categories
-                article
-                    .list__content
-                        .list__content__pagination
-                             +pagination
-                        .list__content__product
-                            +list-product('list-product1', '../../../assets/img/home/product6.jpg')
-                            +list-product('list-product2', '../../../assets/img/home/product6.jpg')
-                            +list-product('list-product3', '../../../assets/img/home/product6.jpg')
-                        .list__content__pagination
-                            +pagination
+                .list
+                    aside
+                        include ../layouts/categories-layout/categories
+                    article
+                        .list__content
+                            .list__content__pagination
+                                +pagination
+                            .list__content__product
+                                +list-product('list-product1', '../../../assets/img/home/product6.jpg')
+                                +list-product('list-product2', '../../../assets/img/home/product6.jpg')
+                                +list-product('list-product3', '../../../assets/img/home/product6.jpg')
+                            .list__content__pagination
+                                +pagination
