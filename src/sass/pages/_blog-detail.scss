@@ -219,3 +219,32 @@
         }
     }
 }
+
+@media screen and (max-width: 1300px) {
+    .blog-detail__content {
+        aside {
+            display: none;
+        }
+
+        .blog-detail__article {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form-group {
+        flex-direction: column !important;
+
+        label {
+            width: 100% !important;
+            margin-bottom: 10px;
+        }
+    }
+
+    .form-btn {
+        a {
+            margin-left: 0 !important;
+        }
+    }
+}

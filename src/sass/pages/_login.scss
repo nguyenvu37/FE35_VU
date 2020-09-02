@@ -42,3 +42,12 @@
         }
     }
 }
+
+// Responsive
+@media screen and (max-width: 767px) {
+    .login__content__form {
+        form {
+            width: 100%;
+        }
+    }
+}

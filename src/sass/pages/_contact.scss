@@ -67,3 +67,24 @@
         }
     }
 }
+
+// Responsive
+@media screen and (max-width: 1300px) {
+    .contact__content {
+        flex-direction: column;
+
+        &__img {
+            width: 100%;
+            padding-right: 0 !important;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__form {
+            padding-left: 0 !important;
+            margin-top: 40px;
+        }
+    }
+}

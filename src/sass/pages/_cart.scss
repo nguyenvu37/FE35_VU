@@ -72,3 +72,25 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .cart__content__table {
+        table {
+            th {
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            td {
+                min-width: 55px;
+                img {
+                    width: 50% !important;
+                }
+
+                .price {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

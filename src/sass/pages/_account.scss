@@ -1,5 +1,6 @@
 .account {
     margin-bottom: 80px;
+    display: flex;
 
     &__content {
         display: block;
@@ -69,6 +70,64 @@
         p {
             font-size: 14px;
             line-height: 1.5;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .account {
+        flex-direction: column;
+
+        article,
+        aside {
+            width: 720px !important;
+        }
+
+        &__content {
+            padding-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .account {
+        article,
+        aside {
+            width: 450px !important;
+        }
+
+        td {
+            min-width: 65px;
+        }
+
+        .total {
+            margin-left: 0;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .account__content,
+    .account__info {
+        width: 320px !important;
+    }
+
+    table {
+
+        .status {
+            display: none;
+        }
+
+        tr {
+            .color-red {
+                display: none;
+            }
+
+            .date {
+                display: none;
+            }
         }
     }
 }

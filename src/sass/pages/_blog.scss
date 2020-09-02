@@ -72,3 +72,40 @@
         }
     }
 }
+
+// Responsive
+@media screen and (max-width: 1300px) {
+    .blog__content__posts {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .posts-item3,
+        .posts-item6,
+        .posts-item9 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blog__content__posts {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .posts-item2,
+        .posts-item4,
+        .posts-item5,
+        .posts-item8 {
+            display: none;
+        }
+
+        .posts-item6 {
+            display: block;
+            padding-left: 0 !important;
+        }
+
+        &__item {
+            padding-right: 0 !important;
+        }
+    }
+}
