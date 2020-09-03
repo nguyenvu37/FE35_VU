@@ -19,25 +19,28 @@ header
                                     .arrow-up
                                     .dropdown-list
                                         each item in menu.dropdown
-                                            ul
-                                                .list-name= item.ul
-                                                each list in item.li
-                                                    li.list-item
-                                                        a(href="#") #{list}
+                                            .dropdown-list__item
+                                                a(href="grid.html").list-name= item.ul
+                                                ul
+                                                    each list in item.li
+                                                        li.list-item
+                                                            a(href="detail.html") #{list}
             .nav__cart
-                i.fas.fa-shopping-cart.cart
-                    .arrow-up
-                    .nav__cart__info
-                        +product-cart('../../assets/img/home/img3.jpg')
-                        +product-cart('../../assets/img/home/img3.jpg')
-                        .nav__cart__info__total
-                            p Tổng số
-                            span.price 240.000
-                                small đ
-                            col
-                        .nav__cart__info__btn
-                            button(type="button") GIỎ HÀNG
-                i.fas.fa-search.search
+                a(href="cart.html")
+                    i.fas.fa-shopping-cart.cart
+                        .arrow-up
+                        .nav__cart__info
+                            +product-cart('../../assets/img/home/img3.jpg')
+                            +product-cart('../../assets/img/home/img3.jpg')
+                            .nav__cart__info__total
+                                p Tổng số
+                                span.price 240.000
+                                    small đ
+                                col
+                            .nav__cart__info__btn
+                                button(type="button") GIỎ HÀNG
+                a(href="#")
+                    i.fas.fa-search.search
                 .nav__cart__bar
                     input.nav__cart__bar--checkbox(type="checkbox" id="menu-toggle")
                     label(for="menu-toggle")
@@ -56,11 +59,14 @@ header
                                             if menu.dropdown
                                                 .dropdown-list
                                                     each item in menu.dropdown
-                                                        ul
-                                                            .list-name= item.ul
-                                                            each list in item.li
-                                                                li.list-item
-                                                                    a(href="#") #{list}
+                                                        .dropdown-list__item
+                                                            a(href="grid.html").list-name= item.ul
+                                                            ul
+                                                                each list in item.li
+                                                                    li.list-item
+                                                                        a(href="detail.html") #{list}
                         .bar-cart
-                            i.fas.fa-shopping-cart.cart
-                            i.fas.fa-search.search
+                            a(href="cart.html")
+                                i.fas.fa-shopping-cart.cart
+                            a(href="#")
+                                i.fas.fa-search.search
